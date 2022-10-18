@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<table Style="color:gray" rules="all">
+		<tr>
+			<td>이름</td>
+			<td><input type="text"></td>
+		</tr>
+		<tr>
+			<td>아이디</td>
+			<td><input type="text"> <input type="button" value="중복확인"></td>
+		</tr>
+		<tr>
+			<td>비밀번호</td>
+			<td>
+				<input type="text">
+				<tt style="color:black"> *영문 대소문자/숫자/특수문자를 혼용하여 2종류 10~16자 또는 3종류 8자~16자
+				<tt>
+			</td>
+		</tr>
+		<tr>
+			<td>비밀번호 확인</td>
+			<td><input type="text"></td>
+		</tr>
+		<tr>
+			<td>생일/성별</td>
+			<td>
+				<input type="number" max="1900" min="2022" step="1">
+				<input type="number" max="12" min="1">
+				<input type="number" max="31" min="1">
+				<input type="radio" name="gender">남
+				<input type="radio" name="gender">여
+			</td>
+		</tr>
+		<tr>
+			<td>우편번호</td>
+			<td><input type="text" width=20>-<input type="text">
+			<input type="button" value="우편번호 검색">
+			</td> 
+		</tr>
+		<tr>
+			<td>집주소</td>
+			<td><input type="text"></td>
+		</tr>
+		<tr>
+			<td>상세주소</td>
+			<td><input type="text"></td>
+		</tr>
+		<tr>
+			<td>연락처</td>
+			<td>
+				<select>
+					<option value="">선택</option>
+					<option value="010">010</option>
+					<option value="011">011</option>
+					<option value="012">012</option>
+					<option value="017">017</option>
+				</select>
+				-<input type="text">
+				-<input type="text">
+			</td>
+		</tr>
+		<tr>
+			<td>이메일</td>
+			<td>
+				<input type="text" placeholder="aaaa@naver.com">
+				<input type="button" value="중복확인">
+			</td>
+		</tr>
+		<tr>
+			<td>회사전화</td>
+			<td>
+				<select>
+					<option value="">선택</option>
+					<option value="02">02</option>
+					<option value="055">055</option>
+					<option value="051">051</option>
+				</select>
+				-<input type="text">
+				-<input type="text">
+			</td>
+		</tr>
+		<tr>
+			<td>회사주소</td>
+			<td>
+				<input type="text" width=20>-<input type="text">
+				<input type="button" value="우편번호 검색"><br>
+				<input type="text">
+			</td>
+		</tr>
+		<tr>
+			<td>뉴스메일</td>
+			<td>
+				<input type="radio" name="mail">받습니다.
+				<input type="radio" name="mail">받지 않습니다.
+			</td>
+		</tr>
+	</table>
+	<div></div>
+</body>
+</html>
