@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+	onload = function(){
+		
+		// 1. 이미지 태그를 만들어 보자.
+		let img_element = document.createElement("img");
+		
+		// 2. 속성을 지정해 보자.
+		// 	  속성을 지정하는 함수 
+		// 	  ==> setAttribute("name", "value")
+		
+		img_element.setAttribute("src","../images/beauty.jpg");
+		img_element.setAttribute("width" , "200");
+		img_element.setAttribute("height" , "200");
+		
+		document.body.appendChild(img_element);
+	}
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

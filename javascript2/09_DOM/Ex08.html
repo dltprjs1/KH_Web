@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+	/* 
+		문서에서 요소를 찾는 방법 - 3가지
+		 3.getElementByClassName(ClassName)
+		  ==> ClassName과 일치하는 요소를 배열로 가져오는 함수.
+	*/
+	onload = function(){
+			  
+		let texts = document.getElementsByClassName("text");
+		
+		console.log("texts 요소 count : "+texts.length);
+	
+		for(let i=0;i<texts.length;i++){
+			texts[i].innerHTML = "texts["+i+"]";
+		}
+	}
+		
+		  
+		  
+</script>
+</head>
+<body>
+	<h1 id="header_1">Header1</h1>
+	
+	<h1 id="header_2">Header2</h1>
+	
+	<hr>
+	
+	<h1>Header1</h1>
+	<p class="text">header1 내용</p>
+	
+	<hr>
+	
+	<h1>Header2</h1>
+	<p class="text">header2 내용</p>
+	
+</body>
+</html>

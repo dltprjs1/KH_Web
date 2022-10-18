@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+	onload = function(){
+		
+		let button = document.getElementById("btn");
+		button.onclick = function(){
+			let txt1 = document.getElementById("txt1").value;
+			//.value는 텍스트 안에 있는 값을 가져온다. 
+			
+			if(txt1 == ""){
+				alert("내용을 입력하세요.");
+			}else{
+				document.getElementById("txt2").value = txt1;
+			}
+		}
+	}
+
+</script>
+</head>
+<body>
+	
+	<h2>
+	버튼을 누르면 첫번째 텍스트 창에 입력된 내용을 <br>
+	두번째 텍스트 창으로 복사를 해 보자.
+	</h2>
+	
+	<input type = "text" id="txt1"> <br>
+	
+	<input type = "text" id="txt2"> <br>
+	
+	<input type = "button" id="btn" value="복사">
+	
+</body>
+</html>

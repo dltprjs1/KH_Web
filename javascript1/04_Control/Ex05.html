@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+	/* 
+	  [문제] 다중 if~else문을 이용하여 성적을 화면에 출력하세요. 키보드로 이름, 국어점수, 영어점수
+	        수학점수, 자바점수를 입력받아서 총점, 평균, 학점을 출력해 보세요.
+	*/
+	
+	let name = prompt("이름을 입력해주십시오.");
+	let kor = parseInt(prompt("국어점수를 입력해 주십시오."));
+	let eng = parseInt(prompt("영어점수를 입력해 주십시오."));
+	let mat = parseInt(prompt("수학점수를 입력해 주십시오."));
+	let jav = parseInt(prompt("자바점수를 입력해 주십시오."));
+	let sum = parseInt(kor+eng+mat+jav);
+	let avg = parseInt((sum/4).toFixed(2));
+	document.write("이름 : "+name+"<br>");
+	document.write("국어 : "+kor+"<br>");
+	document.write("영어 : "+eng+"<br>");
+	document.write("수학 : "+mat+"<br>");
+	document.write("자바 : "+jav+"<br>");
+	document.write("총점 : "+sum+"<br>");
+	document.write("평균 : "+avg+"<br>");
+	if(avg>=90){
+		document.write("학점 :A학점")
+	}else if(avg>=80){
+		document.write("학점 :B학점")
+	}else if(avg>=70){
+		document.write("학점 :C학점")
+	}else if(avg>=60){
+		document.write("학점 :D학점")
+	}else if(avg<60){
+		document.write("학점 :F학점")
+	}
+	
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+	onload  = function(){
+		// 1. h2 태그, 텍스트 노드 만들기
+		let h2_element = document.createElement("h2");
+		let h2_text = document.createTextNode("제목");
+		
+		// 1-2. p 태그, 텍스트 노드 만들기
+		let p_element = document.createElement("p");
+		let p_text = document.createTextNode("본문");
+		
+		// 2. h2 태그 와 p 태그에 텍스트 노드 넣기 
+		h2_element.appendChild(h2_text);
+		p_element.appendChild(p_text);
+		
+		// 3. body 태크에 h2태그와 p태그 넣기
+		document.body.appendChild(h2_element);
+		document.body.appendChild(p_element);
+		
+	}
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

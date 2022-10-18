@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+	onload = function(){
+		
+		// 문서에서 요소를 찾는 방법 - 3가지
+		// 2. getElementsByTagName(tagName)
+		// ==> tagName과 일치하는 요소를 배열로 가져오는 함수이다.
+		
+		let headers = document.getElementsByTagName("h1");
+		
+		/* 
+		headers[0].innerHTML = "headers[0]";
+		headers[1].innerHTML = "headers[1]"; 
+		*/
+		
+		console.log("h1 태그 lenth >>> "+headers.length);
+		
+		for(let i=0;i<headers.length;i++){
+			headers[i].innerHTML = "headers["+i+"]";
+		}
+		
+	}
+
+</script>
+</head>
+<body>
+
+	<h1>Header1</h1>
+	
+	<p>header1 내용</p>
+	
+	<hr>
+	
+	<h1>Header2</h1>
+	
+	<p>header2 내용</p>
+
+</body>
+</html>

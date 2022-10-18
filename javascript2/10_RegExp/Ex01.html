@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+	//우편번호 체크 
+	// 35213(o)
+	// D1234(x)
+	// 4327 (x)
+	// 432719(x)
+	
+	/* 
+	
+	 정규식 형식) : / 패턴 /
+	 
+	 ^ : 정규식 시작
+	 
+	 \d{5} : 숫자 5개
+	 
+	 [A-Z] : 대문자만 입력
+	 
+	 [A-Za-z0-9] : 영문자 , 숫자만으로 구성
+	 
+	 {4,16} : 4글자 초과 16글자 미만
+	 
+	 {4,} : 4글자 이상
+	 
+	 $ : 정규식 끝
+	 
+	 */
+	
+	/* 우편번호 정규표현식 */
+	let regexp_postal = /^\d{5}$/;
+	console.log(regexp_postal.test("41355"))
+	// test() : 맞으면 true / 틀리면 false
+	
+	
+	/* 핸드폰번호 정규표현식 */
+	let regexp_mobile = /^(010)-(\d{3}|\d{4})-\d{4}$/;
+	console.log(regexp_mobile.test("010-7724-7848"))
+	
+	/* 아이디 정규표현식 */
+	//4글자 이상 , 첫글자는 대문자 , 영문자 , 숫자만으로 구성
+	let regexp_userId = /^[A-Z][A-Za-z0-9]{3,}$/
+	console.log(regexp_userId.test("Usertest"))
+	
+</script>
+</head>
+<body>
+	
+</body>
+</html>

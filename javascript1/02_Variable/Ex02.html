@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+	/* 
+		자바스크립트에서의 입출력 대화 상자 - 3가지
+		1. alert() : 알림(경고)창
+		   - 특정 정보를 사용자에게 메세지 창으로 알려 주기 위해 주로 사용된다.
+		     예) window.alert("알림 내용 또는 경고 내용");	(window 생략가능)
+		
+		2. confirm() : 확인 창
+		   - 확인 또는 취소 창이 나타나는 알림창.
+		     예) window.confirm("문자열"); (window 생략가능)
+		     
+		3. prompt() : 입력 창
+		   - 키보드로 데이터를 입력 받을 때 사용하는 알림창.
+		   	 예) window.prompt("문자열",[초기값-생략 가능]); (window 생략가능)
+	*/
+	
+	
+	// 2. confirm() : 확인 창
+	// 		[확인] - true값 반환 / [취소] - false값 반환
+	
+	let ampm = confirm("현재 시간은 오전인가요?");			//자바스크립트에서는 함수도 변수로 선언가능
+	
+	console.log("ampm >>> "+ ampm)
+	console.log(typeof ampm);
+	
+	
+	// 3. prompt() : 입력 창
+	let height = prompt("당신의 키를 입력하세요");
+	
+	console.log("height >>> " + height);
+	console.log(typeof height);				   //prompt()입력창에 작성한 값은 무조건 String
+	
+	// 적정 표준 몸무게 : (키 - 100) * 0.9
+	// 문자열 -> 숫자 : parseInt, Number를 이용하여 문자열 자료형을 숫자로 변환할 수 있다.
+	let standweight = (Number(height) - 100) * 0.9;
+	
+	document.write("당신의 적정 몸무게는 " + standweight + "kg 입니다.");
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+	/* 
+	  [문제] 학생에 대한 정보를 키보드로 입력을 받아서
+	        해당 학생 정보를 화면에 출력해보세요.
+	        (입력 받을 정보 : 이름, 학번, 학과, 연락처, 주소)
+	*/
+	
+	let student = {};
+	
+	student.name = prompt("학생의 이름을 입력하세요.");
+	student.number = prompt("학생의 학번을 입력하세요.");
+	student.major = prompt("학생의 학과를 입력하세요.");
+	student.phone = prompt("학생의 연락처를 입력하세요.");
+	student.addr = prompt("학생의 주소를 입력하세요.");
+	
+	document.write("학생의 이름 : "+student.name+"<br>");
+	document.write("학생의 학번 : "+student.number+"<br>");
+	document.write("학생의 학과 : "+student.major+"<br>");
+	document.write("학생의 연락처 : "+student.phone+"<br>");
+	document.write("학생의 주소 : "+student.addr+"<br>");
+	
+	document.write("<hr>");
+	
+	for(let k in student){
+		document.write(student[k]+"<br>");
+	}
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

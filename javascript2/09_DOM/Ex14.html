@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+	onload = function(){
+		
+		let header = document.getElementById("class");
+		header.onclick = function(){
+			header.innerHTML = "요소의 텍스트가 변경되었습니다.";
+			header.style.color="red";
+		}
+		
+	}
+
+</script>
+</head>
+<body>
+
+	<!-- 
+	  [문제] 해당 글자를 클릭하면 "요소의 텍스트가 변경되어습니다."라는 글귀로 변경이 되도록 하고, 글자의 색상도 빨간색으로 처리되게
+	       	DOM으로 처리해 보세요.
+	 -->
+
+	<div id="class" onclick="going()">이것이 div 요소 입니다</div>
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+	function check(){
+		let userId = document.getElementById("id")
+		let userPwd = document.getElementById("pwd")
+		let userName = document.getElementById("name")
+		let userPhone = document.getElementById("phone")
+		let userAddr = document.getElementById("addr")
+		
+		// 아이디 입력창 입력 여부 확인 작업
+		if(userId.value == ""){
+			alert("아이디를 입력해 주십시오.");
+			userId.focus();	// 마우스 커서를 userId 텍스트 창으로 
+			return false;	// 데이터 전송이 차단된다.
+		}
+		if(userPwd.value == ""){
+			alert("비밀번호를 입력해 주십시오.");
+			userPwd.focus();
+			return false;	// 데이터 전송이 차단된다.
+		}
+		if(userName.value == ""){
+			alert("이름을 입력해 주십시오.");
+			userName.focus();
+			return false;	// 데이터 전송이 차단된다.
+		}
+		if(userPhone.value == ""){
+			alert("연락처를 입력해 주십시오.");
+			userPhone.focus();
+			return false;	// 데이터 전송이 차단된다.
+		}
+		if(userAddr.value == ""){
+			alert("주소를 입력해 주십시오.");
+			userAddr.focus();
+			return false;	// 데이터 전송이 차단된다.
+		}
+		
+	}	
+
+</script>
+</head>
+<body>
+	<div align="center">
+		<form action="http://www.google.com" onsubmit="return check()">
+			<table border="1" cellspacing="0">
+				<tr>
+					<th>아이디</th>
+					<td><input type="text" id="id">
+				</tr>
+				<tr>
+					<th>비밀번호</th>
+					<td><input type="password" id="pwd">
+				</tr>
+				<tr>
+					<th>이름</th>
+					<td><input type="text" id="name">
+				</tr>
+				<tr>
+					<th>연락처</th>
+					<td><input type="text" id="phone">
+				</tr>
+				<tr>
+					<th>주소</th>
+					<td><input type="text" id="addr">
+				</tr>
+				<tr>
+					<td colspan="2" align="center">
+						<input type="submit" value="회원가입">
+							&nbsp;&nbsp;&nbsp;
+						<input type="reset" value="다시작성">
+					</td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</body>
+</html>

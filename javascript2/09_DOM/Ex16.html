@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+	onload = function(){
+		
+		let p_element = document.createElement("p");
+		let p_text = document.createTextNode("안녕하세요");
+		
+		let mydiv = document.getElementById("myDiv");
+		p_element.appendChild(p_text);
+		
+		p_element.style.color="red";
+	
+		mydiv.appendChild(p_element);
+//		document.body.appendChild(p_element);
+		
+	}
+
+</script>
+</head>
+<body>
+	
+	<div id="myDiv">
+		<!-- 
+		 	[문제] 아래와 같이 DOM을 이용하여 화면에 요소가 나타나게 해 주세요.
+		 	     <p>안녕하세요</p>
+		 	     
+		 	     조건) "안녕하세요" 라는 글자는 빨간색 처리
+		 -->
+	</div>
+	
+</body>
+</html>

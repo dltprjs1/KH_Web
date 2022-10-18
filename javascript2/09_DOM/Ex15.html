@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+	onload = function(){
+		
+		let p_element = document.createElement("p");
+		let p_text = document.createTextNode("DOM을 이용한 p태그");
+		let hr_element = document.createElement("hr");
+		
+		p_element.appendChild(p_text);
+		hr_element.setAttribute("title","DOM을 이용한 수평선");
+		
+		
+		document.body.appendChild(p_element);
+		document.body.appendChild(hr_element);
+	
+	}
+
+</script>
+</head>
+<body>
+
+	<br>  <br>  <br>
+	
+	<hr title="직접 태그를 이용하여 생성된 수평선">
+	
+	<br>  <br>  <br>
+	
+	<!-- 
+	  [문제] 해당 위치에 <p> 태그와 <hr>태그를 DOM을 이용하여 생성 후 화면에 보여주세요
+	        <p> DOM을 이용한 p태그</p>
+	        <hr>
+	 -->
+
+</body>
+</html>
