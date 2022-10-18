@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+p{
+	
+	color:lightblue;		/* 글자색상 */
+	text-align: center;		/* 글자위치 */
+	font-size: 20px;		/* 글자크기 */
+	font-family: 궁서체;		/* 글꼴 */
+	font-weight: bold;		/* 굵기 */
+}
+
+
+
+ body{
+ 
+	background-color: white;					/* 문서 전체 배경 색상 */
+		
+	background-image: url("images/img.jpg");	/* 문서 전체 배경 이미지 */
+
+	background-repeat: no-repeat;				/* 배경 이미지를 한 번만 표시하는 속성 */
+		
+	background-position: center;				/* 배경 이미지를 웹브라우저에 배치하는 속성 */
+	
+	}
+	
+	
+	/* 순서 선택자 : nth-of-type() */
+	ul li:nth-of-type(1){
+		color:#FF8000;
+	}
+	ul li:nth-of-type(2){
+		color:#FF36B5;
+	}
+	ul li:nth-of-type(3){
+		color:#FF007F;
+	}
+	ul li:nth-of-type(4){
+		color:#33FF33;
+	}
+	
+	/* 2의 배수(짝수)에 디자인 적용 */
+	ul li:nth-of-type(2n){
+	color:skyblue;
+	}
+	
+	/* 홀수에 디자인 적용 */
+	ul li:nth-of-type(2n+1){
+	color:lightgreen;
+	}
+
+	ul li:first-child{	/* 제일 첫번째 자손에게 부여 */
+		color:skyblue;
+	}
+	
+	ul li:last-child{	/* 제일 마지막 자손에게 부여 */
+		color:skyblue;
+	}
+	
+	/* 홀수 선택자 */
+	ul li:nth-of-type(odd){
+		color:skyblue;
+	}
+	
+	/* 짝수 선택자 */
+	ul li:nth-of-type(even){
+		color:lightgreen;
+	}
+	
+	input[type="text"]{				/* input태그 지정하기 */
+		border:1px solid blue;	/* 테두리 : 가장얇은선, 실선, 파란색 */
+	}
+	input[type="password"]{
+		border:2px solid red;
+	}
+	
+	h1:hover{			/* 마우스가 <h1>로 올라갔을 때 */
+		color:red;
+	}
+	
+	#title {		/* id="title"인 요소 */
+	
+	}
+	
+	.main_text{		/* class="main_text"인 요소 */
+	
+	}
+	
+	ul li{
+	
+		display: inline-block;		/* 블록레벨 요소가 인라인 레벨 요소로 바뀐다. */
+		
+		display : inline;			/* 블록레벨 요소가 인라인 레벨 요소로 바뀐다.(너비 설정x) */
+		
+		text-decoration : none;  	/* a 태그 글자 밑줄을 제거하는 속성 */
+		
+		display : block;			/* 인라인레벨 요소가 블록 레벨 요소로 바뀐다. */
+		
+		box-sizing: border-box;		/* 패딩으로 늘어난 박스 사이즈를 다시 원래대로 되돌리는 속성 */
+		
+		font-size:0.8em;			/* 16px * 0.8 */
+		
+		list-style-type : none; 	/* li의 점을 제거하는 속성 */
+		
+		line-height :40px;			/* 행과의 간격을 설정하는 속성 */
+		
+		line-height :1.5;			/* 기본간격의 1.5배 */
+		
+		letter-spacing: 3px;		/* 글자 사이의 간격 설정 */
+		
+		font-family:궁서체 , 돋움체;	/* 궁서체로 쓰되, 궁서체가 없으면 돋움체로 */
+		
+		margin:16px auto;			/* 양쪽을 균등하고 자동으로 16px로 잡아준다. */
+		
+		border-radius: 3px;			/* 테두리의 모서리를 둥글게 */
+		
+		transform:rotate(15deg);	/* 이미지를 회전시키는 속성 */
+		
+		text-align:right;			/* 텍스트 오른쪽으로 정렬 */
+	}
+	
