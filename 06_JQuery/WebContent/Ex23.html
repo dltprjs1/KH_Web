@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+<script type="text/javascript">
+	
+	/* 
+	 	
+	  요소 조작 함수 : 요소를 생성, 복사, 삭제 , 속성 변환과 관련된 함수를 제공
+	  
+	   1. 속성 조작 함수
+	   
+	   2. 수치 조작 함수
+	   
+	   3. 요소 편집 함수
+	*/		
+	
+	/* 
+		val() / val(값) : 입력 요소에 입력되어 있는 value 값을 가져 오거나
+		 				  변경할 때 사용하는 함수
+	*/
+	
+	let hong = $(function(){
+		//let name = $("#user_name").val();
+		$("#my_name").val($("#user_name").val());
+		
+	});
+	
+</script>
+</head>
+<body>
+
+	<p>
+		<input type="text" name="user_name" id="user_name" value="홍길동">
+	</p>
+	
+	<p>
+		<input type="text" name="my_name" id="my_name">
+	</p>
+	
+</body>
+</html>

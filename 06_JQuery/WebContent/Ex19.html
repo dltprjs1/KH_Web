@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+<script type="text/javascript">
+
+	/* 
+	  제이쿼리 탐색 선택자
+	   - 제이쿼리 탐색 선택자를 이용하면 직적 선택자를 이용해 선택한 요소 중 원하는 요소를 한 번 더
+	     탐색해서 정확히 선택할 수 있는 장점이 있다.
+	     
+	  탐색 선택자의 종류
+	   * 위치 탐색 선택자
+	   	  ==> 선택한 요소 중 위치를 기준으로 선택하는 선택자
+	   * 속성 탐색 선택자
+	      ==> 요소의 지정된 속성을 기준으로 선택하는 선택자
+	   * 콘텐츠 탐색 선택자
+	      ==> 요소 내에서 콘텐츠의 포함 여부를 따져서 선택하는 선택자
+	   * 필터링 선택자
+	   	  ==> 선택한 요소를 한 번 더 필터링하여 선택하는 선택자
+	*/
+	
+	
+	/* 
+	  위치 탐색 선택자
+	  	5. 전체 요소 중 특정 숫자 번째 요소만 선택하는 선택자
+	  		형식) $("요소선택:nth-child(숫자)")
+	  	6. 전체 요소 중 특정 배수의 요소만 선택하는 선택자
+	  		형식) $("요소선택:nth-child(숫자n)")
+	*/		
+	
+	$(function(){
+		$(".menu li:nth-child(2)").css("color","red");						//li 중 두번째 요소 선택
+		
+		$(".menu li:nth-child(3n)").css("background-color","skyblue");		//li 중 3의 배수 요소 선택
+		
+		$(".menu li:nth-child(3n+1)").css("background-color","lightgray")
+		
+		$(".menu li:nth-child(3n+2)").css("background-color","lightgreen")
+	});
+	
+	
+</script>
+</head>
+<body>
+
+	<h2>탐색 선택자 - 위치 탐색 선택자</h2>
+	<ul class="menu">
+		<li>내용1</li>
+		<li>내용2</li>
+		<li>내용3</li>
+		<li>내용4</li>
+		<li>내용5</li>
+		<li>내용6</li>
+		<li>내용7</li>
+		<li>내용8</li>
+		<li>내용9</li>
+		<li>내용10</li>
+		<li>내용11</li>
+		<li>내용12</li>
+		<li>내용13</li>
+		<li>내용14</li>
+		<li>내용15</li>
+		<li>내용16</li>
+		<li>내용17</li>
+		<li>내용18</li>
+		<li>내용19</li>
+		<li>내용20</li>
+	</ul>
+
+</body>
+</html>

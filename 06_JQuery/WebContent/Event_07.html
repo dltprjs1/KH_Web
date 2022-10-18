@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+<script type="text/javascript">
+	
+	/* 
+		이벤트 종류
+		 1. 마우스 이벤트
+		    ==> 사용자가 마우스 버튼을 눌렀을 때 발생하는 이벤트
+		 2. 키보드 이벤트 
+		 	==> 사용자가 키보드를 눌렀을 때 발생하는 이벤트, 이 때 눌린 키에 대한 정보가
+		 	    이벤트에 담긴다.
+		 3. 태그 요소 고유 이벤트
+		    ==> 요소마다 발생하는 고유의 이벤트
+		 4. 사용자 정의 이벤트
+		    ==> 개발자가 직접 만들어 사용하는 이벤트
+		    
+		 * 이벤트 리스너는 보통 무명클래스를 이용하여 처리한다.
+	*/
+
+	/* 
+		이벤트 이름(목록)
+		 ==> blur, change , load , unload , resize , scroll , select , submit , click ,
+		     dblclick , mousedown , mouseup , mousemove , mouseover , mouseout ,
+		     mouseleave , focus , keydown , keypress , keyup 등등
+	*/
+
+	/* 
+		키보드 이벤트
+		- keypress() : 선택한 요소에서 키보드를 눌렀을 때 이벤트 발생
+			형식)$("선택요소").keypress(function(매개변수){...});
+			
+		- keydown() : 선택한 요소에서 키보드를 눌렀을 때 이벤트 발생
+			형식) $("선택요소").keydown(function(매개변수){...});
+			
+		- keyup() : 선택한 요소에서 키보드에서 손을 땠을 때 이벤트 발생
+			형식) $("선택요소").keyup(function(매개변수){...});
+	*/	
+	
+	$(function(){
+		$("#user_id").on("keypress",function(e){
+			$(".txt2").text(e.keyCode);
+		});
+		
+		$("#user_id").keydown(function(e){
+			$(".txt1").text(e.keyCode);
+			$(this).css("background-color","lightyellow");
+		});
+		
+		$("#user_id").keyup(function(e){
+			$(this).css("background-color","pink");
+		});
+	})
+
+</script>
+</head>
+<body>
+	<p>
+		<input type="text" id="user_id">
+	</p>
+	
+	<p class="txt1"></p>
+	<p class="txt2"></p>
+	
+	
+</body>
+</html>

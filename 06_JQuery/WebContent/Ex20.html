@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+<script type="text/javascript">
+
+	/* 
+	  제이쿼리 탐색 선택자
+	   - 제이쿼리 탐색 선택자를 이용하면 직적 선택자를 이용해 선택한 요소 중 원하는 요소를 한 번 더
+	     탐색해서 정확히 선택할 수 있는 장점이 있다.
+	     
+	  탐색 선택자의 종류
+	   * 위치 탐색 선택자
+	   	  ==> 선택한 요소 중 위치를 기준으로 선택하는 선택자
+	   * 속성 탐색 선택자
+	      ==> 요소의 지정된 속성을 기준으로 선택하는 선택자
+	   * 콘텐츠 탐색 선택자
+	      ==> 요소 내에서 콘텐츠의 포함 여부를 따져서 선택하는 선택자
+	   * 필터링 선택자
+	   	  ==> 선택한 요소를 한 번 더 필터링하여 선택하는 선택자
+	*/
+	
+	
+	/* 
+	  탐색 선택자
+	   1. eq(index) 선택자
+	      ==> 지정한 인덱스가 참조하는 요소만 선택하는 선택자
+	   2. lt(index) 선택자
+	   	  ==> 지정한 인덱스 보다 작은(less than) 요소만 선택하는 선택자
+	   3. gt(index) 선택자
+	   	  ==> 지정한 인덱스 보다 큰(great than) 요소만 선택하는 선택자
+	*/		
+	
+	$(function(){
+		$("ul li:eq(3)").css("background-color","pink");
+		
+		$("ul li:lt(3)").css("background-color","lightyellow");
+		
+		$("ul li:gt(3)").css("background-color","lightblue");
+	});
+	
+	
+	
+</script>
+</head>
+<body>
+
+	<h2>탐색 선택자 - 위치 탐색 선택자</h2>
+	<ul class="menu">
+		<li>내용1</li>
+		<li>내용2</li>
+		<li>내용3</li>
+		<li>내용4</li>
+		<li>내용5</li>
+		<li>내용6</li>
+		<li>내용7</li>
+		
+	</ul>
+
+</body>
+</html>
